@@ -34,7 +34,7 @@ namespace FlowControl
              
              if( age < 5 || age > 100) 
                 {
-                    ConsoleUI.Print($"Free enter for Childen lest than 5 year and over 100 year.");
+                    ConsoleUI.Print($"Children under 5 and sinior over 100 get free entry.");
                 } else if (age < 20)
                 {
                     ConsoleUI.Print($"You are a youth, your ticket price is: {youthPrice} SEK.");
@@ -121,7 +121,7 @@ namespace FlowControl
             }
             else
             {
-                return standardPrice; // Standard price
+                return standardPrice; // Standard price for >= 20 and <= 64
             }
         }
     }

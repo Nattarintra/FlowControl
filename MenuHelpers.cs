@@ -12,7 +12,7 @@ namespace FlowControl
         public const string SigleTicket = "1";
         public const string GroupTicket = "2";
         public const string Repeat= "3";
-        public const string SpritTheWord = "4";
+        public const string ExtractThirdWord = "4";
         
     }
 }

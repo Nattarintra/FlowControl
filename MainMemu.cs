@@ -37,22 +37,16 @@ namespace FlowControl
                 switch (input)
                 {
                     case MenuHelpers.SigleTicket:
-                        TicketPriceCalculator.SingleTicket();
-                        
+                        TicketPriceCalculator.SingleTicket();   
                         break;
                     case MenuHelpers.GroupTicket:
-                        TicketPriceCalculator.GroupTicket();
-                        
+                        TicketPriceCalculator.GroupTicket();   
                         break;
                     case MenuHelpers.Repeat:
-
-                        //RepeatTenTimes();
-                        ConsoleUI.Print("Repeat input 10 times");
-                       
+                        RepeatTenTimes.RepeatInput();
                         break;
-                    case MenuHelpers.SpritTheWord:
-                        //SpritTheWord();
-                        ConsoleUI.Print("Split the word");
+                    case MenuHelpers.ExtractThirdWord:
+                        ExtractTheWord.SpritAndGetThirdWord();
                         break;
                     case MenuHelpers.Exit:
                         isExit = true;
