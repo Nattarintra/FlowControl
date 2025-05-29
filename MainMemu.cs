@@ -17,12 +17,13 @@ namespace FlowControl
 
         private static void GreetingMessage()
         {
-            ConsoleUI.Print("Welcome to my C-sharp App");
+            ConsoleUI.Print("Welcome to my C-sharp App \n");
             ConsoleUI.Print("1 - Single ticket & price");
             ConsoleUI.Print("2 - Group ticket & price");
             ConsoleUI.Print("3 - Repeat input 10 times");
             ConsoleUI.Print("4 - Extract third word");
             ConsoleUI.Print("0 - Exit the program");
+            ConsoleUI.Print("---------------------------");
         }
 
         private static void DoSwitchLoopInput()
@@ -31,16 +32,17 @@ namespace FlowControl
             bool isExit = false;
             do
             {
+                ConsoleUI.Print("Select number: ");
                 string input = ConsoleUI.GetInput(); 
                 switch (input)
                 {
                     case MenuHelpers.SigleTicket:
-                        //TicketAndPrice();
-                        ConsoleUI.Print("This will be Single ticket and price");
+                        TicketPriceCalculator.SingleTicket();
+                        
                         break;
                     case MenuHelpers.GroupTicket:
-                        //CalcGroupTicket();
-                        ConsoleUI.Print("Group ticket and price");
+                        TicketPriceCalculator.GroupTicket();
+                        
                         break;
                     case MenuHelpers.Repeat:
 
