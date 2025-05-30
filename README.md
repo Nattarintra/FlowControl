@@ -25,9 +25,10 @@ and organized.
 
 
 Each menu option corresponds to a real-world problem:
-- Menu 1: Demonstrates `if-else` logic
-- Menu 2: Uses a `for` loop
-- Menu 3: Uses string `.Split()` method
+- Menu 1-2: Demonstrates `if-else` logic
+- Menu 3: Uses a `for` loop
+- Menu 4: Uses string `.Split()` method
+- Menu 0: Exit the program when isExit = true;
 
 ## ✨ Features
 Infinite loop menu system
